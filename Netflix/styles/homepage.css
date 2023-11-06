@@ -1,0 +1,215 @@
+:root {
+--swiper-theme-color: #e5e5e5 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #111;
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+}
+
+
+/***************NAVIGATION BAR****************/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    z-index: 100;
+}
+header .nav-logo img{
+    width: 95px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.nav li:hover a{
+    color: #cccaca;
+}
+.sec-nav{
+    display: flex;
+}
+.search{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+}
+.search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+.search input::placeholder{
+    color: #fff;
+}
+.nav-avatar{
+    width: 30px;
+    object-fit: contain;
+}
+
+/***************BANNER****************/
+
+.banner{
+    background-image: url('images/bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    object-fit: contain;
+    height: 720px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-contents{
+    margin-left: 70px;
+    padding-top: 140px;
+    height: 190px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.banner-title{
+    max-width: 500px;
+    padding-bottom: 1.5rem;
+}
+.banner-description{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1.5rem;
+    font-size: 15px;
+    max-width: 400px;
+    height: 480px;
+}
+.banner-button1{
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+}
+.banner-button2{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #777;
+}
+.banner-button1:hover{
+    color: #000;
+    background-color: #cccaca;
+}
+.banner-button2:hover{
+    color: #fff;
+    background-color: #676666;
+}
+.banner-fadetop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background-image: linear-gradient(0deg, transparent, rgba(37,37,37,0.61), #1f1f1f);
+}
+.banner-fadebottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
+}
+
+.banner .section-title{
+    margin-top: auto;
+}
+
+.section-title {
+    margin-block: 4rem 1rem;
+    padding: 0 3rem;
+    font-size: 20px;
+}
+
+/*----------------------FOOTER---------------------*/
+.footer{
+    padding: 50px 15% 10px;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .service-btn{
+    border-radius: 4px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
